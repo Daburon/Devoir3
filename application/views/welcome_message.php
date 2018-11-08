@@ -7,26 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="JQuery\jquery-3.1.1.js"></script>
 	<script src="JS\mesFonctions.js"></script>
-	<script>
-
-
-
-
-	</script>
 </head>
 <body>
-Votre Nom :
-<select id="user" onchange="AfficherRegion(this.value)">
-<?php
-    foreach ($lesNoms as $unNom)
-    {
-?>
-    <option name="Nom" value="<?php echo $unNom->nomUser ; ?>" ><?php echo $unNom->statutUser ; ?>
-<?php
-    }
-?>
-</select>
-<br><br>
+<p>Votre nom : </p>
+    <input type="text" >
+	<br><br>
+	<input type="button" value="Connection" onclick="connexion()">
+	<br><br>
     <div id="divRegion"></div><br><br>
     <div id="divVille"></div>
 </body>

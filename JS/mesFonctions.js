@@ -1,4 +1,5 @@
 function AfficherRegion(statutUser) {
+    user = $('#txtNom').val();
     $.ajax({
         type: "get",
         url: "index.php/Welcome/AfficherRegion",
