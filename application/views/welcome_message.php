@@ -11,10 +11,23 @@
 
 
 
-	
+
 	</script>
 </head>
 <body>
-	
+Votre Nom :
+<select id="user" onchange="AfficherRegion(this.value)">
+<?php
+    foreach ($lesNoms as $unNom)
+    {
+?>
+    <option name="Nom" value="<?php echo $unNom->nomUser ; ?>" ><?php echo $unNom->statutUser ; ?>
+<?php
+    }
+?>
+</select>
+<br><br>
+    <div id="divRegion"></div><br><br>
+    <div id="divVille"></div>
 </body>
 </html>
